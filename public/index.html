@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RobotX Club</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul id="nav-links">
+      <li><a href="#about">من نحن</a></li>
+      <li><a href="#vision">الرؤية والرسالة</a></li>
+      <li><a href="#committees">اللجان</a></li>
+      <li><a href="#register">التسجيل</a></li>
+      <li><a href="#contact">التواصل</a></li>
+    </ul>
+    <div class="logos">
+      <img src="favicon.ico" alt="شعار النادي">
+      <img src="CCIS.png" alt="شعار الكلية">
+      <img src="IMSIU.png" alt="شعار الجامعة">
+    </div>
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <h2>مرحبًا بكم في نادي RobotX</h2>
+    <p>نادي كلية علوم الحاسب والمعلومات - جامعة الإمام محمد بن سعود الإسلامية</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>من نحن؟</h2>
+    <p>نحن نادي طلابي تابع لكلية علوم الحاسب والمعلومات...</p>
+  </section>
+
+  <!-- Vision -->
+  <section id="vision">
+    <h2>رؤيتنا ورسالتنا</h2>
+    <p><strong>رؤيتنا:</strong> منصة طلابية رائدة في التقنية والابتكار.</p>
+    <p><strong>رسالتنا:</strong> توفير بيئة محفزة تدعم التعلم التطبيقي وتنمية المهارات.</p>
+  </section>
+
+  <!-- Committees -->
+  <section id="committees">
+    <h2>اللجان</h2>
+    <div class="grid">
+      <div class="card" onclick="openModal('codefusion')"><h3>لجنة CodeFusion</h3></div>
+      <div class="card" onclick="openModal('org')"><h3>لجنة التنظيم</h3></div>
+      <div class="card" onclick="openModal('quality')"><h3>لجنة الجودة والتطوير</h3></div>
+      <div class="card" onclick="openModal('pr')"><h3>لجنة العلاقات العامة</h3></div>
+      <div class="card" onclick="openModal('hr')"><h3>لجنة الموارد البشرية</h3></div>
+      <div class="card" onclick="openModal('events')"><h3>لجنة الأنشطة والفعاليات</h3></div>
+      <div class="card" onclick="openModal('media')"><h3>لجنة الإعلام</h3></div>
+      <div class="card" onclick="openModal('design')"><h3>لجنة التصميم</h3></div>
+    </div>
+  </section>
+
+  <!-- Register -->
+  <section id="register">
+    <h2>التسجيل في النادي</h2>
+    <div class="qr-section">
+      <p>امسح الباركود للتسجيل:</p>
+      <img src="register-qrcode.png" alt="QR Code التسجيل">
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>التواصل</h2>
+    <div class="qr-section">
+      <p>امسح الباركود للتواصل مع النادي:</p>
+      <img src="contact-qrcode.png" alt="QR Code التواصل">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RobotX Club</p>
+  </footer>
+
+  <!-- Modals (لجان) -->
+  <div class="modal" id="modal-codefusion">
+    <div class="modal-content">
+      <h3>لجنة CodeFusion</h3>
+      <p><strong>تعريف:</strong> لجنة متخصصة بالبرمجة وتطوير البرمجيات.</p>
+      <ul>
+        <li>ورش عمل برمجية</li>
+        <li>تطوير مشاريع تقنية للنادي</li>
+        <li>إعداد محتوى تعليمي برمجي</li>
+        <li>دعم اللجان الأخرى بالحلول التقنية</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('codefusion')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-org">
+    <div class="modal-content">
+      <h3>لجنة التنظيم</h3>
+      <p><strong>تعريف:</strong> لجنة تُعنى بتنظيم الفعاليات وإدارتها.</p>
+      <ul>
+        <li>إعداد التقارير</li>
+        <li>تنظيم الفعاليات</li>
+        <li>إدارة المتطوعين</li>
+        <li>التنسيق مع الكلية</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('org')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-quality">
+    <div class="modal-content">
+      <h3>لجنة الجودة والتطوير</h3>
+      <p><strong>تعريف:</strong> تحسين الأداء العام للنادي ومتابعة الجودة.</p>
+      <ul>
+        <li>متابعة خطط النادي</li>
+        <li>تقييم الفعاليات</li>
+        <li>وضع خطط تطويرية</li>
+        <li>رفع تقارير دورية</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('quality')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-pr">
+    <div class="modal-content">
+      <h3>لجنة العلاقات العامة</h3>
+      <p><strong>تعريف:</strong> تمثيل النادي وبناء شبكة علاقات.</p>
+      <ul>
+        <li>بناء علاقات داخلية وخارجية</li>
+        <li>التواصل مع الرعاة</li>
+        <li>تعزيز صورة النادي</li>
+        <li>متابعة الاتفاقيات</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('pr')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-hr">
+    <div class="modal-content">
+      <h3>لجنة الموارد البشرية</h3>
+      <p><strong>تعريف:</strong> استقطاب الأعضاء وإدارتهم.</p>
+      <ul>
+        <li>إدارة بيانات الأعضاء</li>
+        <li>تنظيم الانضمام والانسحاب</li>
+        <li>تقييم أداء الأعضاء</li>
+        <li>متابعة الساعات التطوعية</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('hr')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-events">
+    <div class="modal-content">
+      <h3>لجنة الأنشطة والفعاليات</h3>
+      <p><strong>تعريف:</strong> التخطيط والتنفيذ للأنشطة الداخلية والخارجية.</p>
+      <ul>
+        <li>إعداد خطة الأنشطة</li>
+        <li>تجهيز الجداول الزمنية</li>
+        <li>ابتكار أفكار جديدة</li>
+        <li>التنسيق مع اللجان الأخرى</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('events')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-media">
+    <div class="modal-content">
+      <h3>لجنة الإعلام</h3>
+      <p><strong>تعريف:</strong> إبراز أنشطة وإنجازات النادي عبر الإعلام.</p>
+      <ul>
+        <li>إدارة الحسابات</li>
+        <li>إعداد المحتوى الإعلامي</li>
+        <li>توثيق الفعاليات</li>
+        <li>نشر الأخبار</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('media')">إغلاق</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-design">
+    <div class="modal-content">
+      <h3>لجنة التصميم</h3>
+      <p><strong>تعريف:</strong> تصميم الهوية البصرية والمواد الدعائية.</p>
+      <ul>
+        <li>الحفاظ على الهوية البصرية</li>
+        <li>تصميم الإعلانات</li>
+        <li>إعداد تصاميم الفعاليات</li>
+        <li>إنتاج محتوى مرئي</li>
+      </ul>
+      <button class="close-btn" onclick="closeModal('design')">إغلاق</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
