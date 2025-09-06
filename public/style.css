@@ -72,7 +72,7 @@ nav ul li a:hover { color: #ccc; }
 /* Header */
 header {
   min-height: 100vh;
-  background: url("bg.jpg") center/cover no-repeat;
+  background: url("bg.png") center/cover no-repeat;
   color: rgb(0, 0, 0);
   display: flex; flex-direction: column;
   justify-content: center; align-items: center;
