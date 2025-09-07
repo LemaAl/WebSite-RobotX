@@ -92,8 +92,8 @@ header::before {
   position: absolute;
   inset: 0;
   background:
-    url("background.png") top ,
-    url("background2.png") bottom;
+    url("images/background.png") top ,
+    url("images/background2.png") bottom;
   filter: blur(0.5px); 
   z-index: -1; 
 }
