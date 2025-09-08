@@ -400,14 +400,14 @@ header p {
 .carousel .card:hover { filter: grayscale(0); }
 
 /* Different colors for cards */
-.carousel .card:nth-child(1) { background: linear-gradient(135deg, #f1a730, #032687); }
-.carousel .card:nth-child(2) { background: linear-gradient(135deg, #3b91c6, #6ddfe5); }
-.carousel .card:nth-child(3) { background: linear-gradient(135deg, #032687, #f1a730); }
-.carousel .card:nth-child(4) { background: linear-gradient(135deg, #11b710, #6ddfe5); }
-.carousel .card:nth-child(5) { background: linear-gradient(135deg, #3b91c6, #032687); }
+.carousel .card:nth-child(1) { background: linear-gradient(135deg, #032687, #6ddfe5); }
+.carousel .card:nth-child(2) { background: linear-gradient(135deg, #f1a730, #032687); }
+.carousel .card:nth-child(3) { background: linear-gradient(135deg, #032687, #6ddfe5); }
+.carousel .card:nth-child(4) { background: linear-gradient(135deg, #f1a730, #032687); }
+.carousel .card:nth-child(5) { background: linear-gradient(135deg, #032687, #6ddfe5); }
 .carousel .card:nth-child(6) { background: linear-gradient(135deg, #f1a730, #3b91c6); }
 .carousel .card:nth-child(7) { background: linear-gradient(135deg, #032687, #6ddfe5); }
-.carousel .card:nth-child(8) { background: linear-gradient(135deg, #11b770, #f1a730); }
+.carousel .card:nth-child(8) { background: linear-gradient(135deg, #f1a730, #3b91c6); }
 
 /* ================= Contact Grid ================= */
 .contact-grid {
