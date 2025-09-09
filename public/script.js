@@ -121,7 +121,7 @@ carousel.addEventListener("touchmove", (e) => {
 function startAutoScroll() {
   clearInterval(autoScroll);
   autoScroll = setInterval(() => {
-    carousel.scrollLeft += direction * 1.5;
+    carousel.scrollLeft += direction * 1;
 
     // If reached half (duplicated items) → reset to start
     if (carousel.scrollLeft >= carousel.scrollWidth / 2) {

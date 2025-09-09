@@ -36,11 +36,6 @@ nav.shrink ul li a { font-size: 0.9em; }
 .logos img { width: 50px; height: 50px; transition: all 0.3s ease; }
 nav.shrink .logos img { width: 45px; height: 45px; }
 
-.ajdr {
-  width: 40px!important;
-  height: 40px!important;
-  margin-top: 7px;
-}
 
 nav ul {
   list-style: none;
