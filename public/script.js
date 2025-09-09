@@ -1,5 +1,5 @@
 // ================= Navbar & Sections =================
-const sections = document.querySelectorAll("section, .info-box, .carousel");
+const sections = document.querySelectorAll("section, .info-box, .carousel, .contact-grid, .counter, #register, #contact");
 const navLinks = document.querySelectorAll("nav ul li a");
 const menuToggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-links");
@@ -21,19 +21,17 @@ window.addEventListener("scroll", () => {
     }
   });
 
-  if (current === "" || current === "header") {
-    navLinks.forEach(link => link.classList.remove("active"));
-  } else if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
-    navLinks.forEach(link => link.classList.remove("active"));
-    document.querySelector('nav ul li a[href="#contact"]').classList.add("active");
-  } else {
-    navLinks.forEach(link => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").includes(current)) {
-        link.classList.add("active");
-      }
-    });
-  }
+ if (current === "" || current === "header") {
+  navLinks.forEach(link => link.classList.remove("active"));
+} else {
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+}
+
 
   // Shrink navbar on scroll
   if (window.scrollY > 100) {
