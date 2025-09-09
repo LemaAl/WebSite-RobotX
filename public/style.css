@@ -492,9 +492,13 @@ font-size: clamp(1.1em, 2.5vw, 1.4em);
 
 .sponsor-box h3 {
   margin-bottom: 15px;
-  font-size: 1.1rem;
+  font-size: 2rem;
   font-weight: 600;
   color: #032687;
+}
+.spo2{
+    font-size: 1.1rem;
+
 }
 
 .sponsor-box img {
